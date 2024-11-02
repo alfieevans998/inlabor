@@ -1,0 +1,21 @@
+#mydiv {
+  /* Set all properties to initial to block inheritance */
+  align-content: initial;
+  align-items: initial;
+  align-self: initial;
+  /* ... */
+}
+
+#mydiv::before,
+#mydiv::after,
+#mydiv *,
+#mydiv *::before,
+#mydiv *::after {
+  /* Use inherit for normally heritable properties */
+  align-content: inherit;
+  align-items: inherit;
+  align-self: inherit;
+  /* ... */
+  color: inherit;
+  /* ... */
+}
